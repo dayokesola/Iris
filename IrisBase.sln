@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisConsole", "IrisConsole\IrisConsole.csproj", "{26996820-F3A4-4F3D-832E-B73BC588B220}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "IrisIntro", "http://localhost:50370", "{65510A0E-6999-4699-A040-96C82EF85A39}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50370"
+		Debug.AspNetCompiler.PhysicalPath = "IrisIntro\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50370\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50370"
+		Release.AspNetCompiler.PhysicalPath = "IrisIntro\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50370\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "IrisIntro\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisManager", "IrisManager\IrisManager.csproj", "{FCB3329F-2CD5-413F-A77E-55DFCFD50693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisLibrary", "..\IrisLibrary\IrisLibrary\IrisLibrary.csproj", "{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26996820-F3A4-4F3D-832E-B73BC588B220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26996820-F3A4-4F3D-832E-B73BC588B220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26996820-F3A4-4F3D-832E-B73BC588B220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26996820-F3A4-4F3D-832E-B73BC588B220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65510A0E-6999-4699-A040-96C82EF85A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65510A0E-6999-4699-A040-96C82EF85A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65510A0E-6999-4699-A040-96C82EF85A39}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{65510A0E-6999-4699-A040-96C82EF85A39}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FCB3329F-2CD5-413F-A77E-55DFCFD50693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB3329F-2CD5-413F-A77E-55DFCFD50693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB3329F-2CD5-413F-A77E-55DFCFD50693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB3329F-2CD5-413F-A77E-55DFCFD50693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
