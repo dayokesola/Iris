@@ -1,0 +1,122 @@
+﻿@model com.iris.RoleManager.Entity.Fxn
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Fxn</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FxnName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FxnName)
+                @Html.ValidationMessageFor(model => model.FxnName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AppId, "AppId", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("AppId", String.Empty)
+                @Html.ValidationMessageFor(model => model.AppId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FxnGroup, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FxnGroup)
+                @Html.ValidationMessageFor(model => model.FxnGroup)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FxnUrl, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FxnUrl)
+                @Html.ValidationMessageFor(model => model.FxnUrl)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FxnFlag, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FxnFlag)
+                @Html.ValidationMessageFor(model => model.FxnFlag)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FxnSort, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FxnSort)
+                @Html.ValidationMessageFor(model => model.FxnSort)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FxnSecured, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FxnSecured)
+                @Html.ValidationMessageFor(model => model.FxnSecured)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateAdded, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DateAdded)
+                @Html.ValidationMessageFor(model => model.DateAdded)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastUpdated, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastUpdated)
+                @Html.ValidationMessageFor(model => model.LastUpdated)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Statusflag, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Statusflag)
+                @Html.ValidationMessageFor(model => model.Statusflag)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Slug, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Slug)
+                @Html.ValidationMessageFor(model => model.Slug)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

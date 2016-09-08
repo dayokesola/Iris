@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\gl\Models\" />
     <Folder Include="Areas\rm\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -123,7 +124,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\gl\Controllers\AddressesController.cs" />
+    <Compile Include="Areas\gl\Controllers\CitiesController.cs" />
+    <Compile Include="Areas\gl\Controllers\CountriesController.cs" />
+    <Compile Include="Areas\gl\glAreaRegistration.cs" />
     <Compile Include="Areas\rm\Controllers\AppsController.cs" />
+    <Compile Include="Areas\rm\Controllers\FxnsController.cs" />
+    <Compile Include="Areas\rm\Controllers\LocationsController.cs" />
+    <Compile Include="Areas\rm\Controllers\RegionsController.cs" />
+    <Compile Include="Areas\rm\Controllers\RoleFxnsController.cs" />
+    <Compile Include="Areas\rm\Controllers\RolesController.cs" />
+    <Compile Include="Areas\rm\Controllers\UserGroupRolesController.cs" />
+    <Compile Include="Areas\rm\Controllers\UserGroupsController.cs" />
+    <Compile Include="Areas\rm\Controllers\UsersController.cs" />
     <Compile Include="Areas\rm\rmAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -148,6 +161,60 @@
     <Content Include="Areas\rm\Views\Apps\Details.cshtml" />
     <Content Include="Areas\rm\Views\Apps\Edit.cshtml" />
     <Content Include="Areas\rm\Views\Apps\Index.cshtml" />
+    <Content Include="Areas\rm\Views\Roles\Create.cshtml" />
+    <Content Include="Areas\rm\Views\Roles\Delete.cshtml" />
+    <Content Include="Areas\rm\Views\Roles\Details.cshtml" />
+    <Content Include="Areas\rm\Views\Roles\Edit.cshtml" />
+    <Content Include="Areas\rm\Views\Roles\Index.cshtml" />
+    <Content Include="Areas\gl\Views\web.config" />
+    <Content Include="Areas\gl\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\gl\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\gl\Views\Countries\Create.cshtml" />
+    <Content Include="Areas\gl\Views\Countries\Delete.cshtml" />
+    <Content Include="Areas\gl\Views\Countries\Details.cshtml" />
+    <Content Include="Areas\gl\Views\Countries\Edit.cshtml" />
+    <Content Include="Areas\gl\Views\Countries\Index.cshtml" />
+    <Content Include="Areas\gl\Views\Cities\Create.cshtml" />
+    <Content Include="Areas\gl\Views\Cities\Delete.cshtml" />
+    <Content Include="Areas\gl\Views\Cities\Details.cshtml" />
+    <Content Include="Areas\gl\Views\Cities\Edit.cshtml" />
+    <Content Include="Areas\gl\Views\Cities\Index.cshtml" />
+    <Content Include="Areas\rm\Views\Users\Create.cshtml" />
+    <Content Include="Areas\rm\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\rm\Views\Users\Details.cshtml" />
+    <Content Include="Areas\rm\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\rm\Views\Users\Index.cshtml" />
+    <Content Include="Areas\rm\Views\Locations\Create.cshtml" />
+    <Content Include="Areas\rm\Views\Locations\Delete.cshtml" />
+    <Content Include="Areas\rm\Views\Locations\Details.cshtml" />
+    <Content Include="Areas\rm\Views\Locations\Edit.cshtml" />
+    <Content Include="Areas\rm\Views\Locations\Index.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroups\Create.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroups\Delete.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroups\Details.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroups\Edit.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroups\Index.cshtml" />
+    <Content Include="Areas\rm\Views\Regions\Create.cshtml" />
+    <Content Include="Areas\rm\Views\Regions\Delete.cshtml" />
+    <Content Include="Areas\rm\Views\Regions\Details.cshtml" />
+    <Content Include="Areas\rm\Views\Regions\Edit.cshtml" />
+    <Content Include="Areas\rm\Views\Regions\Index.cshtml" />
+    <Content Include="Areas\gl\Views\Addresses\Create.cshtml" />
+    <Content Include="Areas\gl\Views\Addresses\Delete.cshtml" />
+    <Content Include="Areas\gl\Views\Addresses\Details.cshtml" />
+    <Content Include="Areas\gl\Views\Addresses\Edit.cshtml" />
+    <Content Include="Areas\gl\Views\Addresses\Index.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroupRoles\Create.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroupRoles\Delete.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroupRoles\Details.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroupRoles\Edit.cshtml" />
+    <Content Include="Areas\rm\Views\UserGroupRoles\Index.cshtml" />
+    <Content Include="Areas\rm\Views\Fxns\Create.cshtml" />
+    <Content Include="Areas\rm\Views\Fxns\Delete.cshtml" />
+    <Content Include="Areas\rm\Views\Fxns\Details.cshtml" />
+    <Content Include="Areas\rm\Views\Fxns\Edit.cshtml" />
+    <Content Include="Areas\rm\Views\Fxns\Index.cshtml" />
+    <Content Include="Areas\rm\Views\RoleFxns\Role.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -172,6 +239,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\_Alerts.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\IrisLibrary\IrisLibrary\IrisLibrary.csproj">

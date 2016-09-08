@@ -1,0 +1,81 @@
+﻿@model IEnumerable<com.iris.Global.Entity.Address>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.City.ShortName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Line1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Line2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Landmark)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Statusflag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Slug)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.City.ShortName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Line1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Line2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Landmark)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateAdded)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastUpdated)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Statusflag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Slug)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

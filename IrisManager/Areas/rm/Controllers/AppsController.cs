@@ -8,10 +8,11 @@ using System.Web;
 using System.Web.Mvc;
 using com.iris.RoleManager.Entity;
 using com.iris;
+using com.iris.Web;
 
 namespace IrisManager.Areas.rm.Controllers
 {
-    public class AppsController : Controller
+    public class AppsController : IrisController
     {
         private IrisDbContext db = new IrisDbContext();
 

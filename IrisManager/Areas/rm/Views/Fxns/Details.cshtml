@@ -1,0 +1,106 @@
+﻿@model com.iris.RoleManager.Entity.Fxn
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Fxn</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.App.AppName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.App.AppName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FxnName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FxnName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FxnGroup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FxnGroup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FxnUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FxnUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FxnFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FxnFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FxnSort)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FxnSort)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FxnSecured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FxnSecured)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Statusflag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Statusflag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Slug)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Slug)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

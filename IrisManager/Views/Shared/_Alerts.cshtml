@@ -1,0 +1,23 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        @{
+            var alerts = TempData.ContainsKey(com.iris.Web.Alert.TempDataKey)
+                        ? (List<com.iris.Web.Alert>)TempData[com.iris.Web.Alert.TempDataKey]
+                        : new List<com.iris.Web.Alert>();
+
+
+            foreach (var alert in alerts)
+            {
+                var dismissableClass = alert.Dismissable ? "alert-dismissable" : null;
+                <div class="alert alert-@alert.AlertStyle @dismissableClass">
+                    @if (alert.Dismissable)
+                    {
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    }
+                    @Html.Raw(alert.Message)
+                </div>
+            }
+
+        }
+    </div>
+</div>

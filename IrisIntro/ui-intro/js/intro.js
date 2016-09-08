@@ -147,4 +147,7 @@ $(function () {
     $("#app_rolemanager").on("click", function () {
         location.href = "/Manager";
     });
+    $("#app_bank").on("click", function () {
+        location.href = "/Bank";
+    });
 });

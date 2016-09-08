@@ -30,6 +30,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisManager", "IrisManager\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisLibrary", "..\IrisLibrary\IrisLibrary\IrisLibrary.csproj", "{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisCoopWorks", "IrisCoopWorks\IrisCoopWorks.csproj", "{B7757D82-3CC8-45BB-BF07-EF7A280818A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisBank", "IrisBank\IrisBank.csproj", "{8D44094F-0AD4-4D3D-9435-054996572390}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +56,14 @@ Global
 		{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EE952F8-ABBF-4354-87CC-0E1F370F94E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7757D82-3CC8-45BB-BF07-EF7A280818A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7757D82-3CC8-45BB-BF07-EF7A280818A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7757D82-3CC8-45BB-BF07-EF7A280818A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7757D82-3CC8-45BB-BF07-EF7A280818A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D44094F-0AD4-4D3D-9435-054996572390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D44094F-0AD4-4D3D-9435-054996572390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D44094F-0AD4-4D3D-9435-054996572390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D44094F-0AD4-4D3D-9435-054996572390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

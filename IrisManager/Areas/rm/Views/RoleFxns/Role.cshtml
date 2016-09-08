@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index";
+    var dl = ViewBag.DataList;
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    foreach (var item in dl)
+    {
+        <p>@item.FxnName</p>
+    }
+
+
+} 
